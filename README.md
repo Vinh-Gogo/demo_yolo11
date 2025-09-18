@@ -1,6 +1,8 @@
-# `Path A`
+# Deploy docker with yolo detection tray & dish
 
-## Setup + download model
+## Path A
+
+* Setup + download model
 
 ```pip
 pip install -r requirements.txt
@@ -10,13 +12,13 @@ pip install -r requirements.txt
 yolov11n.pt
 ```
 
-## Run app.py
+* Run app.py
 
 ```powershell
 python app.py
 ```
 
-## run docker file
+* run docker file
 
 setup Dockerfile
 
@@ -40,7 +42,7 @@ powershell
 docker build -t yolov11-webcam .
 ```
 
-## view
+* view
 
 path URL
 
@@ -48,14 +50,15 @@ path URL
 http://127.0.0.1:5000/video | http://localhost:5000/video
 ```
 
-# `Path B`
+## `Path B`
 
-## Train at train_model.ipynb
+* Train model yolo
 
-Model result:
+Model result at `train_model.ipynb`
 
 ```models
 best.pt / last.pt
 ```
 
+* confusion matrix training image
 ![alt text](image.png)
